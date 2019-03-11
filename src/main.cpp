@@ -1,13 +1,16 @@
-#include "reverseInt.cpp"
+#include "Atoi.cpp"
 #include <iostream>
 
 using namespace std;
 
 int main(int argc, char * argv[])
 {
-    string s = argv[1];
-    int n = stoi(s);
-    reverseInt rc = reverseInt();
-    cout << rc.reverse(n) << endl;
+    Solution sl = Solution();
+    cout << sl.myAtoi("42") << endl;
+    cout << sl.myAtoi("  -42") << endl;
+    cout << sl.myAtoi("42 with words") << endl;
+    cout << sl.myAtoi("words with 42") << endl;
+    cout << sl.myAtoi("-91283472332") << endl;
+    cout << sl.myAtoi("-2147483648") << endl;
     return 0;
 }
