@@ -6,4 +6,4 @@ AUX_SOURCE_DIRECTORY(
 	src DIR_SRCS
 	)
 
-add_executable(main ./src/main.cpp ./src/MaxWidthofBT.cpp)
+add_executable(main ./src/main.cpp ./src/WordPattern.cpp)
