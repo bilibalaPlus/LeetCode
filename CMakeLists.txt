@@ -6,4 +6,4 @@ AUX_SOURCE_DIRECTORY(
 	src DIR_SRCS
 	)
 
-add_executable(main ./src/main.cpp ./src/MaxSumsubarray.cpp)
+add_executable(main ./src/main.cpp ./src/PrintBinaryTree.cpp)
