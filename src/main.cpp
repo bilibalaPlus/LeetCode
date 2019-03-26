@@ -1,4 +1,4 @@
-#include "kthSmallest.cpp"
+#include "constructFromPrePost.cpp"
 #include <iostream>
 
 using namespace std;
@@ -6,13 +6,10 @@ using namespace std;
 int main(int argc, char * argv[])
 {
     Solution sl = Solution();
-    vector<vector<int>> mat;
-    mat.push_back(vector<int> {1,2,3,7});
-    mat.push_back(vector<int> {5,10,14,16});
-    mat.push_back(vector<int> {8,10,18,19});
-    mat.push_back(vector<int> {9,12,22,24});
+    vector<int> pre{1,2};
+    vector<int> post{2,1};
 
-    cout << sl.kthSmallest(mat, 14);
+    sl.constructFromPrePost(pre, post);
 
     return 0;
 }
