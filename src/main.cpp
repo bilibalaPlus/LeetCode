@@ -1,4 +1,4 @@
-#include "constructFromPrePost.cpp"
+#include "BSearch.cpp"
 #include <iostream>
 
 using namespace std;
@@ -6,10 +6,9 @@ using namespace std;
 int main(int argc, char * argv[])
 {
     Solution sl = Solution();
-    vector<int> pre{1,2};
-    vector<int> post{2,1};
+    vector<int> a{-1,0,3,5,9,12};
 
-    sl.constructFromPrePost(pre, post);
+    cout << sl.search(a, 9) << endl;
 
     return 0;
 }
